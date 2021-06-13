@@ -9,4 +9,4 @@ p { text-align: left; }
 
 #-faqs img { display: inline-block; width: 5em; vertical-align: text-bottom; padding: 0; }
 
-img { padding: 5px 0; }
+img { display: block; padding: 5px 0; }
