@@ -1,0 +1,6 @@
+tile: Playdate FAQs
+# domain: childishgiant.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+# url: https://childishgiant.github.io # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /playdate-faqs
+kramdown:
+  input: GFM
