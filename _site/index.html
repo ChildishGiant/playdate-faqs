@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playdate FAQs</title>
 		<link rel="stylesheet" href="assets/css/styles.css">
-
   </head>
   <body>
-    <h1 id="-faqs"><img src="assets/imgs/playdate-logo-colour.svg" alt="playdate" /> FAQs</h1>
+    <h1 id="faqs"><img src="/playdate-faqs/assets/imgs/playdate-logo-colour.svg" alt="playdate" /> FAQs</h1>
 
-<h3 id="multiplayer">Multiplayer?</h3>
+    <div class="centered">
+      <h2 id="multiplayer">Multiplayer?</h2>
 
 <p><a href="https://discord.com/channels/675983554655551509/821661913393004565/852558326113108029"><img src="/playdate-faqs/assets/imgs/multiplayer.png" alt="At some point! Our first slate of games, no one proposed a multiplayer game, so we punted that" /></a>
 <a href="https://discord.com/channels/675983554655551509/675983555209330691/814165105179885569"><img src="/playdate-faqs/assets/imgs/multiplayer_2.png" alt="So, you couldn’t really write your own networking APIs right now—you don’t have low-level access like that through our SDK. (If you completely hack the whole thing to run your firmware, then sure.) We’ll have networking APIs available at some point. For now, we’re focusing on things our season 1 games need." /></a>
 <a href="https://discord.com/channels/675983554655551509/675983555209330691/852164678414368808"><img src="/playdate-faqs/assets/imgs/multiplayer_1.png" alt="We don’t have any networking APIs right now; eventually, yes, but as none of the season 1 games required it, it wasn’t a launch priority" /></a></p>
 
-<h3 id="how-big-are-games">How big are games?</h3>
+<h2 id="how-big-are-games">How big are games?</h2>
 <p><a href="https://discord.com/channels/675983554655551509/675983555209330691/821480814562771044"><img src="/playdate-faqs/assets/imgs/size.png" alt="In my experience, regardless of their size and even their art, most Playdate games are like 500 KB. Then you add music and they're 50 MB+ 😂 So yeah, don't worry about a few megs" /></a>
 <a href="https://discord.com/channels/675983554655551509/675983555209330691/821502848793575455"><img src="/playdate-faqs/assets/imgs/size_1.png" alt="we do see a lot of variety. Some games are like 220 KB WITH Music, if they go the synth route rather than wave files." /></a></p>
-<h3 id="when-will-the-sdk-be-released">When will the SDK be released</h3>
+<h2 id="when-will-the-sdk-be-released">When will the SDK be released</h2>
 <p><a href="https://discord.com/channels/675983554655551509/675983555209330691/756225570463023344"><img src="/playdate-faqs/assets/imgs/release.png" alt="I can confirm that the SDK release is independent of the hardware release. If one is ready first, we won't hold it back. (Which one will be ready first? Can't really say…)" /></a></p>
 
-<h3 id="are-there-haptics-vibration-motor">Are there haptics (vibration motor)?</h3>
+<h2 id="are-there-haptics-vibration-motor">Are there haptics (vibration motor)?</h2>
 
 <p><a href="https://discord.com/channels/675983554655551509/675983555209330691/852588044335054899"><img src="/playdate-faqs/assets/imgs/vibration.png" alt="Yeah would’ve been cool, but we just ran out of space. For what it’s worth, audio can sort of kind of fool you into thinking there’s haptic" /></a></p>
 
-<h3 id="how-durable-is-the-crank">How durable is the crank?</h3>
+<h2 id="how-durable-is-the-crank">How durable is the crank?</h2>
 
 <p><a href="https://discord.com/channels/675983554655551509/675983555209330691/793153885513711696"><img src="/playdate-faqs/assets/imgs/crank_1.png" alt="For reference, I’ve had my Playdate unit for about two years. The crank is as good as new 🙂" /></a>
 <a href="https://discord.com/channels/675983554655551509/675983555209330691/852588435808976896"><img src="/playdate-faqs/assets/imgs/crank_2.png" alt="My Playdate is about 3 years old and I haven’t noticed any issues. Everything wears out eventually, but I’m confident about the crank" /></a></p>
 
+    </div>
+
+    <div class="footer">
+      Any questions? Ask on <a href="https://discord.gg/zFKagQ2">discord</a>
+    </div>
+
   </body>
+  <script>
+    document
+      .querySelectorAll('h3')
+      .forEach(function(heading) {
+        if (heading.id) {
+          heading.innerHTML =
+            '<a href="#' + heading.id + '">' + heading.innerText + '<\/a>';
+        }
+      });
+  </script>
 </html>

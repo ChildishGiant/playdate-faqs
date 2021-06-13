@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
 		<link rel="stylesheet" href="assets/css/styles.css">
-
   </head>
   <body>
-    {{ content }}
+    <h1 id="faqs"><img src="/playdate-faqs/assets/imgs/playdate-logo-colour.svg" alt="playdate" /> FAQs</h1>
+
+    <div class="centered">
+      {{ content }}
+    </div>
+
+    <div class="footer">
+      Any questions? Ask on <a href="https://discord.gg/zFKagQ2">discord</a>
+    </div>
+
   </body>
+  <script>
+    document
+      .querySelectorAll('h3')
+      .forEach(function(heading) {
+        if (heading.id) {
+          heading.innerHTML =
+            '<a href="#' + heading.id + '">' + heading.innerText + '<\/a>';
+        }
+      });
+  </script>
 </html>

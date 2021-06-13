@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-body { background-color: #36393f; font-family: "Inter", Helvetica, sans-serif; padding: 0 2em; }
+:root { --logo-yellow: $logo-yellow; }
 
-h1 { color: #ffb814; }
+body { background-color: #36393f; font-family: "Inter", Helvetica, sans-serif; margin-bottom: 50vh; }
 
-h3 { color: #fff; font-weight: 500; }
+h1 { color: #ffb814; color: var(--logo-yellow); }
 
-p { text-align: left; }
+h2 { color: #fff; font-weight: 500; padding: 0 1em; }
 
-#-faqs img { display: inline-block; width: 5em; vertical-align: text-bottom; padding: 0; }
+p { margin: 0 auto; }
 
-img { display: block; padding: 5px 0; }
+#faqs img { display: inline-block; width: 5em; vertical-align: text-bottom; padding: 0; }
+
+img { display: block; padding: 0.5em 0; }
+
+h1 > a, h2 > a { color: inherit; text-decoration: none; }
+h1 > a:hover, h1 a:target, h2 > a:hover, h2 a:target { text-decoration: underline; }
+
+.centered { display: flex; flex-direction: column; }
+
+.footer { text-align: center; font-size: 1.2em; padding-top: 0.5em; color: #fff; }
+
+.footer a { color: #ffb814; color: var(--logo-yellow); }
