@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-:root { --logo-yellow: $logo-yellow; }
+:root { --logo-yellow: #ffb814; }
 
 body { background-color: #36393f; font-family: "Inter", Helvetica, sans-serif; margin-bottom: 50vh; }
 

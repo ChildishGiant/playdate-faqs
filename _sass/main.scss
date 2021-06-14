@@ -3,7 +3,7 @@
 $logo-yellow: #ffb814;
 
 :root {
-	--logo-yellow: $logo-yellow;
+	--logo-yellow: #{$logo-yellow};
 }
 
 body {
